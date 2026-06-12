@@ -1,10 +1,10 @@
 package oo.object;
 
 /*
-* toString()
-* 1.默认返回对象地址值
-* 2.对于String,File,Date和包装类等，返回具体内容
-* */
+ * toString()
+ * 1.默认返回对象地址值
+ * 2.对于String,File,Date和包装类等，返回具体内容
+ * */
 
 public class _03 {
     public static void main(String[] args) {
@@ -18,25 +18,3 @@ public class _03 {
     }
 }
 
-class Use {
-    private String name;
-    private int age;
-
-    public Use() {
-    }
-    public Use(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-
-    // 重写toString()
-    @Override
-    public String toString() {
-        return "User{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
-    }
-
-    // idea 自动生成,alt+insert->toString()
-}

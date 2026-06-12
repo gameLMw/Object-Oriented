@@ -1,9 +1,9 @@
 package oo.keywords;
 
 /*
-* static 静态的
-* 不能使用this，不能使用super
-* */
+ * static 静态
+ * 不能使用this，不能使用super
+ * */
 
 public class _01 {
     public static void main(String[] args) {
@@ -26,19 +26,3 @@ public class _01 {
     }
 }
 
-class Chinese {
-    //非静态变量，实例变量
-    String name;
-    int age;
-
-    //静态变量,类变量
-    static String nation = "CHN";
-
-    @Override
-    public String toString() {
-        return "Chinese{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
-    }
-}

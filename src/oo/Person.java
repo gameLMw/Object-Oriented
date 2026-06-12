@@ -1,8 +1,8 @@
-package oo.method;
+package oo;
 
 /*
-*this：代表当前对象
-* */
+ *this：代表当前对象
+ * */
 
 public class Person {
     // 属性
@@ -48,10 +48,11 @@ public class Person {
     }
 
     // 方法
-    public void eat(){
+    public void eat() {
         System.out.println("吃饭");
     }
-    public void sleep(){
+
+    public void sleep() {
         System.out.println("睡觉");
     }
 }
