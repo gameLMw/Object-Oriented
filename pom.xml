@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Maven POM (Project Object Model) 配置文件
+    用于定义项目的元数据、依赖关系和构建配置
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- POM 模型版本，Maven 2.x 和 3.x 必须使用 4.0.0 -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- 项目组织标识符，通常使用反向域名（如 org.example） -->
+    <groupId>io.github.gameLMw</groupId>
+
+    <!-- 项目名称，在 groupId 下唯一标识一个项目 -->
+    <artifactId>object_oriented</artifactId>
+
+    <!-- 项目版本号：
+      - SNAPSHOT: 开发中的快照版本
+      - RELEASE: 正式发布的稳定版本
+      格式通常为：主版本.次版本.修订版本 -->
+    <version>1.0-SNAPSHOT</version>
+
+    <!-- 项目属性配置，定义可重用的变量 -->
+    <properties>
+        <!-- Java 编译器源代码版本，指定使用 Java 21 -->
+        <maven.compiler.source>21</maven.compiler.source>
+
+        <!-- Java 编译器目标字节码版本，生成的字节码兼容 Java 21 -->
+        <maven.compiler.target>21</maven.compiler.target>
+
+        <!-- 项目构建时的源文件编码格式，设置为 UTF-8 以支持国际化字符 -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <!-- Source: https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.14.4</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+</project>
